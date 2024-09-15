@@ -1,5 +1,6 @@
 package net.sheepoffate.flesh_and_corruption;
 
+import net.sheepoffate.flesh_and_corruption.block.ModBlocks;
 import net.sheepoffate.flesh_and_corruption.item.ModCreativeModeTabs;
 import net.sheepoffate.flesh_and_corruption.item.ModItems;
 import org.slf4j.Logger;
@@ -48,6 +49,7 @@ public class FleshAndCorruption
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sheepoffate.flesh_and_corruption.FleshAndCorruption;
+import net.sheepoffate.flesh_and_corruption.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -23,6 +24,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.END_METAL_INGOT);
                     }))
                     .build());
+
+    public static final Supplier<CreativeModeTab> FLESH_AND_CORRUPTION_BLOCKS_TAB =
+            CREATIVE_MODE_TABS.register("flesh_and_corruption_creative_mode_blocks_tab", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup.flesh_and_corruption.flesh_and_corruption_creative_mode_blocks_tab"))
+                    .icon(() -> new ItemStack(ModBlocks.END_METAL_ORE.get()))
+                    .displayItems(((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.END_METAL_ORE);
+                    }))
+                    .build());
+
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
