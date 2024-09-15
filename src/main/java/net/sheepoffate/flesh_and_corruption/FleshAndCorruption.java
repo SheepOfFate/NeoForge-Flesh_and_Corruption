@@ -1,5 +1,7 @@
 package net.sheepoffate.flesh_and_corruption;
 
+import net.sheepoffate.flesh_and_corruption.item.ModCreativeModeTabs;
+import net.sheepoffate.flesh_and_corruption.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -43,6 +45,9 @@ public class FleshAndCorruption
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
