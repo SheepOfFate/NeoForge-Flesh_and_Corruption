@@ -1,8 +1,10 @@
 package net.sheepoffate.flesh_and_corruption.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -18,7 +20,7 @@ public class ModBlocks {
 
     //Create new blocks
     public static final DeferredBlock<Block> END_METAL_ORE = registerBlock("end_metal_ore",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block>DeferredBlock<T> registerBlock(String name, Supplier<T>block){

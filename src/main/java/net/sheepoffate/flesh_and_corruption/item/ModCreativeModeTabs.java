@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.END_METAL_INGOT.get()))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.END_METAL_INGOT);
+                        output.accept(ModItems.RAW_END_METAL);
                     }))
                     .build());
 

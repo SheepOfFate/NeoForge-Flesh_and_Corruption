@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "end_metal",
+  "ingredient": {
+    "item": "flesh_and_corruption:raw_end_metal"
+  },
+  "result": {
+    "id": "flesh_and_corruption:end_metal_ingot"
+  }
+}
