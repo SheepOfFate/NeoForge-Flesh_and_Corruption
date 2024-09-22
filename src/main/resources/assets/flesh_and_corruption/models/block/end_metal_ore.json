@@ -1,4 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {"all": "flesh_and_corruption:block/end_metal_ore"}
-}

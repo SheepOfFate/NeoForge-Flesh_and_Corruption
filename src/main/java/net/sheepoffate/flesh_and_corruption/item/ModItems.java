@@ -13,6 +13,7 @@ public class ModItems {
     //Register new items here
     public static final DeferredItem<Item> END_METAL_INGOT = ITEMS.registerSimpleItem("end_metal_ingot");
     public static final DeferredItem<Item> RAW_END_METAL = ITEMS.registerSimpleItem("raw_end_metal");
+    public static final DeferredItem<Item> ENDER_FRAGMENT = ITEMS.registerSimpleItem("ender_fragment");
 
     //
 

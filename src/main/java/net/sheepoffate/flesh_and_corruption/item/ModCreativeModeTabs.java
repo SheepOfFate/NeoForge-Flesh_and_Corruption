@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.END_METAL_INGOT);
                         output.accept(ModItems.RAW_END_METAL);
+                        output.accept(ModItems.ENDER_FRAGMENT);
                     }))
                     .build());
 
