@@ -19,13 +19,19 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.END_METAL_ORE.get());
-
-
+                .add(ModBlocks.END_METAL_ORE.get())
+                .add(ModBlocks.END_METAL_BLOCK.get())
+                .add(ModBlocks.RAW_END_METAL_BLOCK.get())
+                .add(ModBlocks.FLESH_BLOCK.get())
+                .add(ModBlocks.FLESH_ORE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add((ModBlocks.END_METAL_ORE.get()));
+                .add((ModBlocks.END_METAL_ORE.get()))
+                .add(ModBlocks.END_METAL_BLOCK.get())
+                .add(ModBlocks.RAW_END_METAL_BLOCK.get());
 
-
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.FLESH_BLOCK.get())
+                .add(ModBlocks.FLESH_ORE.get());
     }
 }

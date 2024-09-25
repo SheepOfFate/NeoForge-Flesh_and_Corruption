@@ -14,6 +14,8 @@ public class ModItems {
     public static final DeferredItem<Item> END_METAL_INGOT = ITEMS.registerSimpleItem("end_metal_ingot");
     public static final DeferredItem<Item> RAW_END_METAL = ITEMS.registerSimpleItem("raw_end_metal");
     public static final DeferredItem<Item> ENDER_FRAGMENT = ITEMS.registerSimpleItem("ender_fragment");
+    public static final DeferredItem<Item> RAW_FLESH_NUGGET = ITEMS.registerSimpleItem("raw_flesh_nugget");
+    public static final DeferredItem<Item> FLESH_INGOT = ITEMS.registerSimpleItem("flesh_ingot");
 
     //
 

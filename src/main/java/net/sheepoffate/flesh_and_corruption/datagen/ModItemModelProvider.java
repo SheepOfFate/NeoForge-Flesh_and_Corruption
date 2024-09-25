@@ -20,6 +20,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.END_METAL_INGOT.get());
         basicItem(ModItems.RAW_END_METAL.get());
         basicItem(ModItems.ENDER_FRAGMENT.get());
+        basicItem(ModItems.RAW_FLESH_NUGGET.get());
+        basicItem(ModItems.FLESH_INGOT.get());
     }
 
     public void buttonItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {

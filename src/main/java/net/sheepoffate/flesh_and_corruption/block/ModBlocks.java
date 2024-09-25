@@ -22,6 +22,19 @@ public class ModBlocks {
     public static final DeferredBlock<Block> END_METAL_ORE = registerBlock("end_metal_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> RAW_END_METAL_BLOCK = registerBlock("raw_end_metal_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> END_METAL_BLOCK = registerBlock("end_metal_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> FLESH_ORE = registerBlock("flesh_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0, 2), BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> FLESH_BLOCK = registerBlock("flesh_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+
 
     private static <T extends Block>DeferredBlock<T> registerBlock(String name, Supplier<T>block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

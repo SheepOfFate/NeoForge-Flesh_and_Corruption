@@ -32,8 +32,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         // dropSelf(ModBlocks.MAGIC_BLOCK.get());
 
         this.add(ModBlocks.END_METAL_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.END_METAL_ORE.get(), ModItems.RAW_END_METAL.get(), 1, 4));
+                block -> createMultipleOreDrops(ModBlocks.END_METAL_ORE.get(), ModItems.RAW_END_METAL.get(), 1, 2));
 
+        dropSelf(ModBlocks.END_METAL_BLOCK.get());
+        dropSelf(ModBlocks.RAW_END_METAL_BLOCK.get());
+
+        this.add(ModBlocks.FLESH_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.FLESH_ORE.get(), ModItems.RAW_FLESH_NUGGET.get(), 1, 6));
+
+        dropSelf(ModBlocks.FLESH_BLOCK.get());
 
     }
 

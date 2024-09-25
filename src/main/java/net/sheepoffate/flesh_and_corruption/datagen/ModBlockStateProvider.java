@@ -21,7 +21,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
        // blockWithItem(ModBlocks.BLACK_OPAL_BLOCK);
 
         blockWithItem(ModBlocks.END_METAL_ORE);
-
+        blockWithItem(ModBlocks.RAW_END_METAL_BLOCK);
+        blockWithItem(ModBlocks.END_METAL_BLOCK);
+        blockWithItem(ModBlocks.FLESH_ORE);
+        blockWithItem(ModBlocks.FLESH_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<Block> deferredBlock) {

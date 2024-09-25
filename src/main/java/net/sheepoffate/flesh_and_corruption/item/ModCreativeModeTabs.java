@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.END_METAL_INGOT);
                         output.accept(ModItems.RAW_END_METAL);
                         output.accept(ModItems.ENDER_FRAGMENT);
+                        output.accept(ModItems.FLESH_INGOT);
+                        output.accept(ModItems.RAW_FLESH_NUGGET);
                     }))
                     .build());
 
@@ -33,6 +35,10 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlocks.END_METAL_ORE.get()))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.END_METAL_ORE);
+                        output.accept(ModBlocks.END_METAL_BLOCK);
+                        output.accept(ModBlocks.RAW_END_METAL_BLOCK);
+                        output.accept(ModBlocks.FLESH_BLOCK);
+                        output.accept(ModBlocks.FLESH_ORE);
                     }))
                     .build());
 

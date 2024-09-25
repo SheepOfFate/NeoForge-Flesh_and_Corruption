@@ -2,8 +2,15 @@
   "item.flesh_and_corruption.end_metal_ingot": "End Metal Ingot",
   "item.flesh_and_corruption.raw_end_metal": "Raw End Metal",
   "item.flesh_and_corruption.ender_fragment": "Ender Fragment",
+  "item.flesh_and_corruption.raw_flesh_nugget": "Raw Flesh Nugget",
+  "item.flesh_and_corruption.flesh_ingot": "Flesh Ingot",
 
   "block.flesh_and_corruption.end_metal_ore": "End Metal Ore",
+  "block.flesh_and_corruption.flesh_ore": "Flesh Ore",
+  "block.flesh_and_corruption.raw_end_metal_block": "Raw End Metal Block",
+  "block.flesh_and_corruption.end_metal_block": "End Metal Block",
+  "block.flesh_and_corruption.flesh_block": "Flesh Block",
+
 
   "itemGroup.flesh_and_corruption.flesh_and_corruption_creative_mode_items_tab": "Items",
   "itemGroup.flesh_and_corruption.flesh_and_corruption_creative_mode_blocks_tab": "Blocks"
